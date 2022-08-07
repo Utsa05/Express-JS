@@ -4,8 +4,8 @@ var port = 8000;
 app = express();
 
 
-app.post('/', function (req, res) {
-    //post request url =>http://localhost:8000?pageNo=2&totalPage=300
+app.get('/', function (req, res) {
+    //get request url =>http://localhost:8000?pageNo=2&totalPage=300
 
     let pageNo = req.query.pageNo;
     let totalPage = req.query.totalPage;
